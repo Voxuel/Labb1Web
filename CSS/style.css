@@ -2,9 +2,7 @@ body{
     background-image: url("/Images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
-
 .head{
     background-color: aqua;
     display: flex;
@@ -71,4 +69,7 @@ table,th,td{
     text-align: center;
     background-color: #333;
     color: aquamarine;
+}
+.links_list{
+    font-size: 40px;
 }
