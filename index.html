@@ -5,19 +5,22 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="script" href="JS/script.js">
     <title>CV-Site</title>
-    <script defer type="module" src="JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
-    <script>getNav()</script>
+<body class="Home">
+    <div id="nav-bar">
+        <nav class="navigation">
+            <a class="active" href="index.html">Home</a>
+            <a class="Resume" href="resume.html">Resume</a>
+            <a class="Projects" href="projects.html">Portfolio</a>
+            <a class="about" href="about.html">About me</a>
+            <a class="links" href="links.html">Links</a>
+            </nav><br><br>
+    </div>
+
     <div>
         <h1 class="title">Welcome</h1>
         <h2 class="homepage">This is a resume site as part of project one in the course Front-end development</h2>
     </div>
 </body>
-
-<script>
-    $(function(){
-    $("#nav-bar").load("nav.html");
-});
-</script>

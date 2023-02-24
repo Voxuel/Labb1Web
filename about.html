@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <head>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body>
+<body class="About">
     <div id="nav-bar">
+        <nav class="navigation">
+            <a class="Home" href="index.html">Home</a>
+            <a class="Resume" href="resume.html">Resume</a>
+            <a class="Projects" href="projects.html">Portfolio</a>
+            <a class="active" href="about.html">About me</a>
+            <a class="links" href="links.html">Links</a>
+            </nav><br><br>
+    </div>
+
+<div class="about_me">
+    <div class="intro">
+        <h1>About me</h1>
+    </div>
+    <div class="container">
+        <div class="container_item">
+            <h3>Experience</h3>
+            <p>
+                This is about exp
+            </p>
+        </div>
+        <div class="container_item">
+            <h3>Education</h3>
+            <p>
+                This is about edu
+            </p>
+        </div>
+        <div class="container_item">
+            <h3>Goals</h3>
+            <p>This is about goals</p>
+        </div>
 
     </div>
 
-<h1>About me</h1>
-<ul>
-    <li>Leo F</li>
-    <li>Sweden</li>
-    <li>Leo.frid@edu.varberg.se</li>
-</ul>
+</div>
 </body>
-
-<script>
-    $(function(){
-    $("#nav-bar").load("nav.html");
-});
-</script>
