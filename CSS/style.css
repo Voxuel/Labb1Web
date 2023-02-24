@@ -5,6 +5,21 @@
     padding: 0;
     margin: 0;
 }
+.navigation{
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navigation a{
+    float: left;
+    color:aquamarine;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 .title{
     text-align: center;
     color: black;

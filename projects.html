@@ -2,8 +2,11 @@
 
 <head>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
+<body>
+    <div id="nav-bar"></div>
 <div>
     <table class="table">
         <tr>
@@ -17,3 +20,10 @@
         </tr>
     </table>
 </div>
+</body>
+
+<script>
+    $(function(){
+    $("#nav-bar").load("nav.html");
+});
+</script>

@@ -3,20 +3,21 @@
     <meta charset="UTF-8">
     <meta lang="en">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="script" href="JS/script.js">
     <title>CV-Site</title>
-    
+    <script defer type="module" src="JS/script.js"></script>
 </head>
 
 <body>
+    <script>getNav()</script>
     <div>
         <h1 class="title">Welcome</h1>
         <h2 class="homepage">This is a resume site as part of project one in the course Front-end development</h2>
     </div>
-    <div class="head">
-        <nav>
-            <a href="about.html">About me</a><br>
-            <a href="links.html">Links</a><br>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </div>
 </body>
+
+<script>
+    $(function(){
+    $("#nav-bar").load("nav.html");
+});
+</script>
