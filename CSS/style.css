@@ -10,12 +10,14 @@ body{
     padding: 0;
     margin: 0;
 }
+.nav_container{
+}
 .navigation{
     background-color: #333;
     overflow: hidden;
-    position: fixed;
     top: 0;
     width: 100%;
+    position: fixed;
 }
 .navigation a{
     float: left;
@@ -42,11 +44,20 @@ body{
 .image{
     size: 50%;
 }
-table,th,td{
+table{
+    background-color: aquamarine;
+}
+table,th{
+    font-size: 40px;
     border: 3px solid;
     border-color: black;
     table-layout: initial;
-    
+}
+table td{
+    border: 3px solid;
+    border-color: black;
+    table-layout: initial;
+    font-size: 27px;
 }
 .container{
     display: flex;
@@ -65,11 +76,105 @@ table,th,td{
     color: black;
     background-color: pink;
 }
+.about_me{
+    justify-content: center;
+}
 .intro{
     text-align: center;
     background-color: #333;
     color: aquamarine;
 }
+.about_paragraph{
+    background-color: #333;
+    color: aquamarine;
+    width: 60%;
+    height: 300px;
+    float: right;
+}
+.about_me img{
+    max-width: fit-content;
+    max-height: 450px;
+    max-width: 400px;
+}
+.about_me .intro{
+    width: 100%;
+}
 .links_list{
     font-size: 40px;
 }
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+.button {
+    font-size: 37px;
+    padding: 10px;
+    color: black;
+    border: 5px black solid;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.button:hover {
+    background: #06D85F;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+.popup p{
+    font-size: 25px;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+@media screen and (max-width: 700px){
+    .box{
+    width: 70%;
+}
+    .popup{
+    width: 70%;
+}
+}
+

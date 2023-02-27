@@ -1,32 +1,85 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
-
-<body class="Projects">
+<header class="nav_container">
     <div id="nav-bar">
         <nav class="navigation">
             <a class="Home" href="index.html">Home</a>
             <a class="Resume" href="resume.html">Resume</a>
             <a class="active" href="projects.html">Portfolio</a>
-            <a class="About" href="about.html">About me</a>
+            <a class="about" href="about.html">About me</a>
             <a class="links" href="links.html">Links</a>
             </nav><br><br>
     </div>
+</header>
+<body class="Projects">
 <div>
     <table class="table">
         <tr>
             <th scope="col">Project Name</th>
             <th scope="col">Github Link</th>
             <th scope="col" width="50%">Description</th>
+            <th scope="col" width="20%">Info</th>
         </tr>
         <tr>
-            <td>Bank Project</td>
-            <td><a href="https://github.com/Voxuel/TeamLemon" target="_blank">Bank App</a></td>
+            <td>Lemon Bank</td>
+            <td><i class="fa-brands fa-github"></i><a href="https://github.com/Voxuel/TeamLemon" target="_blank">TeamLemon</a></td>
+            <td><p>A small bank app built with the .NET library as part of an
+                group proejct activity to learn Agile teamwork and building applications
+                on the .NET platform
+            </p></td>
+            <td align="center"><a class="button" href="#lemonModal">More info</a>
+            </td>
+        </tr>
+        <tr>
+            <td>MTGDungeon</td>
+            <td><i class="fa-brands fa-github"></i><a href="https://github.com/Voxuel/MTGDungeon" target="_blank">MTGDungeon</a></td>
+            <td><p>Web-app built with microsoft .NET ASP CORE.
+            </p></td>
+            <td align="center"><a class="button" href="#MTGDungeonModal">More info</a>
+        </tr>
+        <tr>
+            <td>AOC2022</td>
+            <td><i class="fa-brands fa-github"></i><a href="https://github.com/Voxuel/AdventOfCode2022" target="_blank">AdventOfCode2022</a></td>
+            <td><p>Advent of code 2022 project.
+            </p></td>
+            <td align="center"><a class="button" href="#AOC2022Modal">More info</a>
         </tr>
     </table>
 </div>
+<div class="overlay" id="lemonModal">
+    <div class="popup">
+    <a class="close" href="#">&times;</a>
+    <br><p>This app works as an bank interface for both users and admins of our
+        made up bank (Lemon Bank), Here users can handle accounts and loans,
+        Transfer money between internal and external accounts and more.
+        The admin can create new users and handle exchange rates.
+    </p>
+    </div>
+</div>
+<div class="overlay" id="MTGDungeonModal">
+    <div class="popup">
+    <a class="close" href="#">&times;</a>
+    <br><p>The application is ment to learn MVC using asp.net core to call Cardmarket.com REST-API 
+        to get a list of cardnames and prices and then adding them to an sql-database from 
+        where the user can query for cards to see the prices trend they are at currently
+    </p>
+    </div>
+</div>
+<div class="overlay" id="AOC2022Modal">
+    <div class="popup">
+    <a class="close" href="#">&times;</a>
+    <br><p>Combined source code for days of the advent of code 2022 list of problems.
+        Using only C# and .NET to solve and extract answers for each days task and generate an answers
+        in an console windom. The repo contains both metods and classes used multiple times for different tasks.
+        In this way learning how to build dynamic methods that can handle different types of problems while
+        still maintaining the rule of only doing one thing.
+    </p>
+    </div>
+</div>
 </body>
+</html>
