@@ -1,19 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-image: url("/Images/PBG1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    margin: 0;
     flex-direction: column;
 }
 footer {
     margin-top: auto;
     background-color: #333333c6;
     height: 50px;
-}
-.homepage_intro_block{
-    display: flex;
 }
 .intro_block_image img{
     width: 500px;
@@ -117,6 +119,7 @@ table td{
     font-family: 'Noto Serif', serif;
     font-size: 17px;
     margin: 5px;
+    list-style: none;
 }
 .about_paragraph{
     background-color: rgba(0, 0, 0, 0.89);
@@ -209,6 +212,9 @@ img{
 }
     .popup{
     width: 70%;
+}
+    .resume_content{
+    grid-template-columns: repeat(1,1fr);
 }
 }
 
