@@ -2,9 +2,9 @@ body{
     background-image: url("/Images/PBG1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
     min-height: 100vh;
     display: flex;
+    margin: 0;
     flex-direction: column;
 }
 footer {
@@ -50,9 +50,9 @@ a:hover{
 }
 .navigation{
     background-color: #333;
-    overflow: hidden;
     top: 0;
     width: 100%;
+    overflow: hidden;
 }
 .navigation a{
     float: left;
@@ -71,6 +71,13 @@ a:hover{
 .title{
     text-align: center;
     color: black;
+    font-size: 75px;
+    font-family: sans-serif;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 30%;
+
+    background-color: rgba(127, 255, 212, 0.622);
 }
 .homepage{
     text-align: center;
@@ -94,8 +101,7 @@ table td{
 .resume_content{
     display: grid;
     grid-template-columns: 25rem 25rem 25rem;
-    grid-template-rows: 30rem 30rem 30rem;
-    min-height: 100vh;
+    grid-template-rows: 30rem;
     justify-content: space-between;
     margin: 15px;
 }
@@ -116,7 +122,6 @@ table td{
     background-color: rgba(0, 0, 0, 0.89);
     color: #39ff14;
     width: 50%;
-    height: 500px;
     font-family: 'Roboto Mono', monospace;
     padding: 20px;
     margin-left: 10px;
@@ -206,4 +211,5 @@ img{
     width: 70%;
 }
 }
+
 
