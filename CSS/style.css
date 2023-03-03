@@ -85,6 +85,15 @@ a:hover{
     text-align: center;
     padding: 0%;
 }
+.homepage_intro_block{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.intro_block_image{
+    float: left;
+    margin: 25px;
+}
 table{
     background-color: aquamarine;
 }
@@ -216,6 +225,10 @@ img{
     .resume_content{
     grid-template-columns: repeat(1,1fr);
 }
+    .homepage_intro_block{
+        display: block;
+        flex-direction: column;
+    }
 }
 
 
