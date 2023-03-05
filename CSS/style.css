@@ -140,6 +140,7 @@ table td{
     padding: 20px;
     margin-left: 10px;
     margin-top: 50px;
+    height: fit-content;
 }
 img{
     max-width: 80%;
