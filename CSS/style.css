@@ -93,7 +93,7 @@ a:hover{
     margin: 25px;
 }
 table{
-    background-color: aquamarine;
+    background-color: seagreen;
     table-layout: fixed;
 }
 table,th{
@@ -215,6 +215,10 @@ img{
 .popup .content {
     max-height: 30%;
     overflow: auto;
+}
+.link{
+    font-size: 35px;
+    margin: 15px;
 }
 @media screen and (max-width: 700px){
     .box{
