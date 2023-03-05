@@ -96,18 +96,20 @@ a:hover{
 }
 table{
     background-color: aquamarine;
+    table-layout: fixed;
 }
 table,th{
     font-size: 40px;
     border: 3px solid;
     border-color: black;
-    table-layout: initial;
 }
 table td{
     border: 3px solid;
     border-color: black;
-    table-layout: initial;
     font-size: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 .resume_content{
     display: grid;
@@ -224,10 +226,19 @@ img{
 }
     .resume_content{
     grid-template-columns: repeat(1,1fr);
+    gap: 15px;
 }
     .homepage_intro_block{
         display: block;
         flex-direction: column;
+    }
+    .about_me{
+        display: block;
+        flex-direction: column;
+    }
+    .table{
+        overflow-x: auto;
+        display: block;
     }
 }
 
