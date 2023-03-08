@@ -1,0 +1,52 @@
+{
+    "Work":[
+        {
+            "No": "1",
+            "Place": "Steamboiler-service AB",
+            "YearsOfEmployment":"2017-2017 (Summer job)",
+            "Description": "Maintenance and installs of industrial boilers and VVS"
+        },
+        {
+            "No": "2",
+            "Place": "FA-Industri AB",
+            "YearsOfEmployment":"2017-2017 (Summer job)",
+            "Description": "Maintenance of industrial machines"
+        },
+        {
+            "No": "3",
+            "Place": "Industriunderhåll AB",
+            "YearsOfEmployment":"2017-2019",
+            "Description": "Install and construction of industrial machinery"
+        },
+        {
+            "No": "4",
+            "Place": "Derome Timber AB",
+            "YearsOfEmployment":"2019-2022",
+            "Description": "Maintenance engineer working as team-lead for a group of 3 mechanics"
+        }
+    ],
+    "Education":[
+        {
+            "School": "Peder-skrivare skola varberg",
+            "Education": "Industrial maintenance and drift reasurance"
+        },
+        {
+            "School": "Campus varberg",
+            "Education": "Software development .NET"
+        }
+    ],
+    "References":[
+        {
+            "Company":"SBS-Mekaniska"
+        },
+        {
+            "Company":"FA-Industri"
+        },
+        {
+            "Company":"Industiunderhåll AB"
+        },
+        {
+            "Company":"Derome timber AB"
+        }
+    ]
+}
