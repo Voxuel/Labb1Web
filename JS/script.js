@@ -5,7 +5,8 @@ document.querySelector("#ee_bg").addEventListener('click',secretPopUp);
 
 function secretPopUp(){
     console.log("secret!");
-    document.body.style.background = "url('images/secret.jpg')"
+    document.body.style.background = "url('images/bg_gif.gif')";
+    document.body.style.backgroundRepeat = "repeat";
 }
 
 function readCvFromJson(){
