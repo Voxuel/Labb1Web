@@ -1,16 +1,12 @@
 
+
+
 document.querySelector("#ee_bg").addEventListener('click',secretPopUp);
 
 function secretPopUp(){
     console.log("secret!");
     document.body.style.background = "url('images/secret.jpg')"
 }
-
-
-
-
-
-
 
 function readCvFromJson(){
     fetch('../assets/cv.json')
@@ -61,5 +57,23 @@ function getReferences(refs){
     }
     listDiv.appendChild(ul);
 }
-
 readCvFromJson();
+
+document.addEventListener('keydown', secretEvtHandler,false);
+
+var pattern = ['1','3','3','7'];
+var current = 0;
+function secretEvtHandler(evt){
+    if(pattern.indexOf(evt.key) < 0 || evt.key !== pattern[current]){
+        current = 0;
+        return;
+    }
+    current++;
+
+    if(pattern.length === current){
+        current = 0;
+        window.alert("You found me!? Who else knows where I am!? I gotta get out of here!");
+    }
+}
+
+
