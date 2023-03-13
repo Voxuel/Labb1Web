@@ -1,4 +1,16 @@
 
+document.querySelector("#ee_bg").addEventListener('click',secretPopUp);
+
+function secretPopUp(){
+    console.log("secret!");
+    document.body.style.background = "url('images/secret.jpg')"
+}
+
+
+
+
+
+
 
 function readCvFromJson(){
     fetch('../assets/cv.json')
