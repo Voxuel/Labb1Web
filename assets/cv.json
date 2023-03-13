@@ -28,11 +28,13 @@
     "Education":[
         {
             "School": "Peder-skrivare skola varberg",
-            "Education": "Industrial maintenance and drift reasurance"
+            "Education": "Industrial maintenance and drift reasurance",
+            "Time": "2014-2017"
         },
         {
             "School": "Campus varberg",
-            "Education": "Software development .NET"
+            "Education": "Software development .NET",
+            "Time": "2022-present"
         }
     ],
     "References":[

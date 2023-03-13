@@ -6,6 +6,8 @@ function readCvFromJson(){
     .then((data) => 
     {
         getWorkExperience(data["Work"]);
+        getEducation(data["Education"]);
+        getReferences(data["References"]);
 })}
 
 function getWorkExperience(work){
@@ -20,5 +22,32 @@ function getWorkExperience(work){
         ul.appendChild(li)
     }
     listDiv.appendChild(ul);
-
 }
+function getEducation(edu){
+    var listDiv = document.getElementById('edu_list');
+    var ul = document.createElement('ul');
+
+    console.log(edu);
+
+    for(let i = 0; i < edu.length; i++){
+        var li = document.createElement('li');
+        li.innerHTML = edu[i].School + "<br>" + edu[i].Education + "<br>" + edu[i].Time;
+        ul.appendChild(li)
+    }
+    listDiv.appendChild(ul);
+}
+function getReferences(refs){
+    var listDiv = document.getElementById('ref_list');
+    var ul = document.createElement('ul');
+
+    console.log(refs);
+
+    for(let i = 0; i < refs.length; i++){
+        var li = document.createElement('li');
+        li.innerHTML = refs[i].Company;
+        ul.appendChild(li)
+    }
+    listDiv.appendChild(ul);
+}
+
+readCvFromJson();
